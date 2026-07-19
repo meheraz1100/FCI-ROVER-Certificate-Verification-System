@@ -19,7 +19,7 @@ export default function Header() {
       </h1>
 
       <p className="text-xl font-bold text-gray-300 mt-3">
-        Training Certificate Verification System
+        Certificate Verification System
       </p>
 
     </header>

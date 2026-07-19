@@ -5,7 +5,7 @@ return(
 <footer className="border-t border-green-700 py-8 text-center text-gray-300">
 
 <p>
-© 2026 Feni Computer Institute Rover Scout Group
+© 2026 Feni Government Computer Institute Rover Scout Group
 </p>
 
 <p className="mt-2 text-sm">
