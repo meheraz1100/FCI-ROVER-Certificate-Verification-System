@@ -42,23 +42,21 @@ export default function VerifySection() {
           Enter Certificate ID
         </p>
 
-        <div className="flex gap-4 mt-8">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
 
           <input
             type="text"
             value={certificateId}
             onChange={(e) => setCertificateId(e.target.value)}
             placeholder="FCIRSG-42-001"
-            className="flex-1 bg-[#214b31] rounded-lg px-4 py-4 outline-none"
+            className="h-12 flex-1 rounded-lg bg-[#214b31] px-4 outline-none"
           />
-
           <button
             onClick={handleVerify}
-            className="bg-yellow-500 text-black px-8 rounded-lg font-bold"
+            className="h-12 rounded-lg bg-yellow-500 px-8 font-bold text-black"
           >
             {loading ? "Verifying..." : "Verify"}
           </button>
-
         </div>
 
         {error && (
