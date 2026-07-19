@@ -49,7 +49,7 @@ export default function VerifySection() {
             value={certificateId}
             onChange={(e) => setCertificateId(e.target.value)}
             placeholder="FCIRSG-42-001"
-            className="h-12 flex-1 rounded-lg bg-[#214b31] px-4 outline-none"
+            className=" flex-1 rounded-lg bg-[#214b31] px-4 outline-emerald-500"
           />
           <button
             onClick={handleVerify}
