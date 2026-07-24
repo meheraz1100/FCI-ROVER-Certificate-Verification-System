@@ -1,16 +1,234 @@
-# React + Vite
+# 🏕️ FCI Rover Certificate Verification System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern MERN Stack based certificate verification system developed for **Feni Government Computer Institute Rover Scout Group**. The system allows the public to verify training certificates using a unique certificate ID, while administrators can securely manage certificate records.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Live Link:** https://fci-rover-verification.vercel.app
 
-## React Compiler
+> Replace the backend URL with your deployed Render URL.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🌍 Public Verification
+- Verify certificates using a unique Certificate ID
+- Instant verification result
+- Displays certificate details if found
+- Shows error message for invalid certificate IDs
+
+### 🔐 Admin Panel
+- Admin login
+- View all certificates
+- Add new certificates
+- Logout functionality
+
+### 📄 Certificate Information
+- Certificate ID
+- Full Name
+- Training Name
+- Issue Date
+- Status (Valid / Revoked)
+
+---
+
+## 🖥️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB Atlas
+- Mongoose
+
+### Deployment
+- Vercel (Frontend)
+- Render (Backend)
+
+---
+
+## 📂 Project Structure
+
+```
+rover-certificate-verification/
+│
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── package.json
+│
+├── server/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/meheraz1100/FCI-ROVER-Certificate-Verification-System.git
+```
+
+```bash
+cd fci-rover-certificate-verification
+```
+
+---
+
+## 🚀 Backend Setup
+
+```bash
+cd server
+npm install
+```
+
+Create a `.env` file
+
+```env
+PORT=5000
+MONGODB_URI=YOUR_MONGODB_CONNECTION_STRING
+```
+
+Run the server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🚀 Frontend Setup
+
+```bash
+cd client
+npm install
+```
+
+Create a `.env` file
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+Run
+
+```bash
+npm run dev
+```
+
+---
+
+## 📌 API Endpoints
+
+### Get All Certificates
+
+```
+GET /api/certificates
+```
+
+### Verify Certificate
+
+```
+GET /api/certificates/:certificateId
+```
+
+Example
+
+```
+GET /api/certificates/FCIRSG-42-001
+```
+
+### Create Certificate
+
+```
+POST /api/certificates
+```
+
+### Delete Certificate
+
+```
+DELETE /api/certificates/:id
+```
+
+---
+
+## 📸 Screenshots
+
+### Certificate Verification
+
+https://i.ibb.co.com/HDRrWmF3/Screenshot-2026-07-24-193154.png
+
+### Admin Panel
+
+https://i.ibb.co.com/RGkB4pSV/Screenshot-2026-07-24-193229.png
+
+---
+
+## 🔒 Certificate ID Format
+
+Every certificate uses a unique format.
+
+```
+FCIRSG-42-001
+FCIRSG-42-002
+FCIRSG-42-003
+...
+```
+
+---
+
+## 🎯 Future Improvements
+
+- Edit Certificate
+- Delete Confirmation Modal
+- Search & Filter
+- Auto-generated Certificate ID
+- Admin Authentication with JWT
+- Certificate QR Code Verification
+- Export Certificate Data
+- Dashboard Statistics
+
+---
+
+## 👨‍💻 Developer
+
+**Mosaiyeb Meheraz**
+
+- GitHub: https://github.com/meheraz1100
+- LinkedIn: https://linkedin.com/in/dev-mosaiyebmeheraz
+
+---
+
+## 🏕️ Organization
+
+Developed for
+
+**Feni Government Computer Institute Rover Scout Group**
+
+---
+
+## 📜 License
+
+This project is developed for educational and organizational use by **Feni Government Computer Institute Rover Scout Group**.
