@@ -6,10 +6,6 @@ A modern MERN Stack based certificate verification system developed for **Feni G
 
 - **Live Link:** https://fci-rover-verification.vercel.app
 
-> Replace the backend URL with your deployed Render URL.
-
----
-
 ## 📌 Features
 
 ### 🌍 Public Verification
@@ -178,11 +174,11 @@ DELETE /api/certificates/:id
 
 ### Certificate Verification
 
-https://i.ibb.co.com/HDRrWmF3/Screenshot-2026-07-24-193154.png
+https://github.com/user-attachments/assets/3ffaa8b3-91f7-4675-a6cf-fe4f056298ce
 
 ### Admin Panel
 
-https://i.ibb.co.com/RGkB4pSV/Screenshot-2026-07-24-193229.png
+https://github.com/user-attachments/assets/9cddce19-b2ce-4f57-b1a9-3229eb2224d7
 
 ---
 
