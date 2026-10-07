@@ -73,26 +73,26 @@ export default function AddCertificateForm({
           />
 
           <select
-  name="trainingName"
-  value={formData.trainingName}
-  onChange={handleChange}
-  className="w-full p-3 rounded bg-[#1d412b]"
->
-  <option value="">Select Training</option>
+            name="trainingName"
+            value={formData.trainingName}
+            onChange={handleChange}
+            className="w-full p-3 rounded bg-[#1d412b]"
+          >
+            <option value="">Select Training</option>
 
-  <option value="Annual Camp & Initiation Ceremony 2026">
-    Annual Camp & Initiation Ceremony 2026
-  </option>
-  <option value="Typhoid Conjugated Vaccine (TCV) Campaign 2025">
-    Typhoid Conjugated Vaccine (TCV) Campaign 2025
-  </option>
-  <option value="Final Scouting Certificate - Batch - 18">
-    Final Scouting Certificate - Batch - 18
-  </option>
+            <option value="Annual Camp & Initiation Ceremony 2026">
+              Annual Camp & Initiation Ceremony 2026
+            </option>
+            <option value="Typhoid Conjugated Vaccine (TCV) Campaign 2025">
+              Typhoid Conjugated Vaccine (TCV) Campaign 2025
+            </option>
+            <option value="Final Scouting Certificate - Batch - 18">
+              Final Scouting Certificate - Batch - 18
+            </option>
 
-  
 
-</select>
+
+          </select>
 
           <input
             type="date"
